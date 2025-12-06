@@ -146,39 +146,6 @@ Quit the server with CTRL-BREAK.
 
 ---
 
-## 📁 Project Structure
-
-```
-realestate/
-├── myapp/                      # Main Django app
-│   ├── migrations/             # Database migrations
-│   ├── static/                 # Static files (CSS, JS, images)
-│   ├── templates/              # HTML templates
-│   │   ├── newpage.html        # Home page
-│   │   ├── NavBar.html         # Navigation bar (included)
-│   │   ├── Footer.html         # Footer (included)
-│   │   ├── Home.html           # Home view
-│   │   ├── About_*.html        # About pages
-│   │   ├── Buy*.html           # Buy property pages
-│   │   ├── Agent*.html         # Agent pages
-│   │   └── ...                 # Other templates
-│   ├── admin.py                # Admin configurations
-│   ├── models.py               # Database models
-│   ├── views.py                # View functions
-│   ├── urls.py                 # App-level URLs
-│   └── tests.py                # Tests
-├── realestate/                 # Project configuration
-│   ├── settings.py             # Django settings
-│   ├── urls.py                 # Project-level URLs
-│   ├── wsgi.py                 # WSGI config
-│   └── asgi.py                 # ASGI config
-├── media/                      # User uploaded files
-├── manage.py                   # Django management script
-├── db.sqlite3                  # SQLite database
-└── README.md                   # This file
-```
-
----
 
 ## 🔧 Key Configurations
 
@@ -218,22 +185,6 @@ $(document).on('click', '[data-toggle="dropdown"]', function(e) {
 This fix is included in:
 - `NavBar.html` (for included pages)
 - All individual template files with scripts
-
----
-
-## 🌐 URL Routes (Sample)
-
-| Route | View | Template | Description |
-|-------|------|----------|-------------|
-| `/hom` | `newpage` | newpage.html | Home page |
-| `/abtac` | About | About_actuion.html | About our action |
-| `/abtus` | About | About_Join_Us.html | Join us page |
-| `/byflt` | BuyFlat | BuyFlat.html | Buy flat properties |
-| `/byapp` | BuyApartment | BuyApartment.html | Buy apartments |
-| `/sellft` | SellFlat | SellFlat.html | Sell flat properties |
-| `/sell` | SellHouse | SellHouse.html | Sell houses |
-| `/cont` | Contact | Contact_Info.html | Contact information |
-| `/sin` | Login | (Auth) | Sign in |
 
 ---
 
@@ -311,13 +262,6 @@ python manage.py test
 This project is for educational purposes. All rights reserved.
 
 ---
-
-## 📞 Support
-
-For issues or questions, please check:
-1. The troubleshooting section above
-2. Django official documentation: https://docs.djangoproject.com/
-3. Bootstrap documentation: https://getbootstrap.com/docs/4.6/
 
 ---
 
