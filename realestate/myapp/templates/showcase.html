@@ -1,0 +1,49 @@
+{% include 'Header.html' %}
+
+<section>
+<div class="container">
+<form method="POST">
+{% csrf_token %}
+<input tyle class="submit" name="showBtn" value="show case" />
+
+{% for user in users %}
+  <thead>
+    <tbody>
+        <tr>
+            
+        </tr>
+    </tbody>
+  </thead>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {% for k,v in user.items %}
+        {{ v }}
+      {% endfor %}  
+      </h1>
+{% endfor %}     
+
+    <tbody>

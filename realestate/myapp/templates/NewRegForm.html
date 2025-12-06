@@ -1,0 +1,105 @@
+{% include 'Header.html' %}
+{% load static %}
+
+<style>
+/* Background styling */
+body {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+  url("{% static 'images/Resident2.jpg' %}") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling */
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 420px;
+  color: white;
+  box-shadow: 0 0 12px rgba(255,255,255,0.4);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Input Styling */
+.form-control {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+}
+
+.form-control:focus {
+  background: rgba(255,255,255,0.3);
+  color: white;
+  border: 1px solid #00e676;
+  box-shadow: 0 0 10px #00e676;
+}
+
+/* Button */
+.btn-login {
+  background: #00e676;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #00c853;
+  transform: scale(1.03);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+a {
+  color: #00e676;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+</style>
+
+<section class="login-section">
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <form method="POST">
+      {% csrf_token %}
+      
+      <div class="form-group">
+        <label>Enter Name</label>
+        <input type="text" class="form-control" name="unm" placeholder="Enter Username" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Password</label>
+        <input type="password" class="form-control" name="pwd" placeholder="Enter Password" required>
+      </div>
+<div class="btn-field">
+      <button type="submit" name="logiBtn" class="btn btn-login mt-2">Login</button>
+      </div>
+
+      <p class="text-center mt-3">
+        <a href="/sin">New User? Register Here</a>
+      </p>
+      
+    </form>
+  </div>
+</section>

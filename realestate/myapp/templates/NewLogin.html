@@ -1,0 +1,47 @@
+{% include 'Header.html' %}
+<section>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <table class="table table-bordered table-dark">
+                <tbody>
+                    <tr>
+                        <td>
+                            Enter Name
+                        </td>
+                        <td>
+                            <input type="text" name="unm" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Password
+                        </td>
+                        <td>
+                            <input type="password" name="pwd" />
+                        </td>
+                    </tr>
+                    <tr>
+                     <td>
+                            ReType Password
+                    </td>
+                    <td>
+                            <input type="password" name="retype_pwd" />
+                     </td>
+                    </tr>
+
+                     <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="regBtn" value="Regiister" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <a href="/userReg">Already a User</a>
+                        </td>
+                    </tr>
+
+        </form>
+    </div>
+</section>
+{% include 'Footer.html' %}

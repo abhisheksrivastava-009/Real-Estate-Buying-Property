@@ -1,0 +1,192 @@
+{% load static %}
+{%include 'Header.html' %}
+{%include 'NavBar.html' %}
+
+    <style type="text/css">
+        
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap'); */
+      
+      
+      body{
+        line-height: 1.5;
+        font-family: "Rubik Glitch Pop", system-ui;}
+    
+     </style>
+  </head>
+  <body>
+    
+        <div class="">
+            
+          <section style="margin-top: 10px;">
+            <div class="card bg-dark text-white">
+              <video src="{% static 'images/videos/Home Page.mp4' %}" class="d-block w-640" alt="" autoplay muted ></video>
+                   
+           <div class="card-img-overlay">
+              <h2 class="card-title text-info text-center" >Looking to Buy a new property or Sell an existing one? </h2>       
+             <h2 class="card-title text-info text-center">provides aneasy solution!</h2>
+                          
+            </div>
+           </div> 
+           </div>
+          </section>
+
+
+
+ <h2 style="text-align: center; margin-top: 20px;">View Properties</h2>
+ <div class="text-secondary">
+ <h5 style="text-align: center; margin-top: 20px; ">Some Latest Properties</h5></div>
+   <section style="margin-top: 30px;">
+    <div class="container">
+     <div class="card-deck">
+     <div class="card">
+     <img src="{% static 'images/home1.jpg' %}" class="card-img-top" alt="...">
+     <div class="card-body">
+     <h5 class="card-title">Home In Town</h5>
+     <p class="card-text">Added: June 15 2023</p>
+     <p class="card-text "><small class="text-muted text-primary">$540,000</small></p>
+   </div>
+  </div> 
+
+  <div class="card">
+   <img src="{% static 'images/Home2.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+   <p class="card-text">This card t</p>
+       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+      </div>
+     <div class="card">
+        <img src="{%  static 'images/Home6.jpg' %}" class="card-img-top" alt="...">
+     <div class="card-body">
+     <h5 class="card-title">Card title</h5>
+     <p class="card-text">This is a wider card </p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+   </div>
+      </div>
+    </div>
+
+ </div>
+    </section>
+
+    <section style="margin-top: 30px;">
+        <div class="container">
+         <div class="card-deck">
+         <div class="card">
+         <img src="{% static 'images/Home3.jpg' %}" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Card title</h5>
+         <p class="card-text">This is a longer card </p>
+         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+       </div>
+      </div> 
+    
+      <div class="card">
+       <img src="{% static 'images/Home 4.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+       <p class="card-text">This card </p>
+           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+          </div>
+         <div class="card">
+            <img src="{% static 'images/Home 5.jpg' %}" class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Card title</h5>
+         <p class="card-text">This is a wider card </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+       </div>
+          </div>
+        </div>
+    
+     </div>
+        </section>
+
+
+        <h2 style="text-align: center; margin-top: 20px;">Image Post Format</h2>
+        <div class="text-secondary">
+        <section style="margin-top: 50px;">
+            <div class="container">
+        <div class="card-columns">
+
+            <div class="card">
+              <img src="{% static 'images/Residedent1.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="{% static 'images/Resident2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>RealHomes gracefully facilitates real estate business owners
+                </p>
+                <footer class="blockquote-footer text-white">
+                  <small>
+                    RealHomes gracefully facilitates real estate business owners by making property management easier & affordable. <cite title="Source  Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="{% static 'images/Resident3.jpg' %}" class="card-img" alt="...">
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/Resident5.jpg' %}" class="card-img" alt="...">
+              </div>
+
+              <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                  <p> Facilitates real estate business owners</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted"><div class="text-warning">
+                        Our proffesional library showcasing recent successful sales of residential and commercial real estate. You can also view a selection of detailed case studies.</div> <cite title="Source Title"><a href="#" >About_Join_Us</a></cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="card">
+                <img src="{% static 'images/Resident4.jpg' %}" class="card-img" alt="...">
+              </div>
+                   
+    </div></section>
+    
+    
+{%include 'Footer.html' %}
+   
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+                            
+
+    
+
+
+

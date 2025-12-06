@@ -1,0 +1,34 @@
+{% include 'Header.html'%}
+
+<section>
+<div class="container">
+<form method="post">
+{% csrf_token %}
+<input type="submit" name="showBtn" value="Show Data" />
+</form>
+
+<div class="row">
+    {% for data in userData %}
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="media/{{ data.emp_img }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ data.emp_name }} </h5>
+              <p class="card-text">{{ data.emp_email }}</p>
+              <p class="card-text">{{ data.emp_dept }}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+</div>
+</section>
+
+{% include 'Footer.html'%}

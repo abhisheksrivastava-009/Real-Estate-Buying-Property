@@ -1,0 +1,79 @@
+{% include 'Header.html' %}
+<section>
+<div class="container">
+    <form method="post">
+    {% csrf_token %}
+    <table class="table table-bordered table-dark">
+        <tbody>
+            <tr>
+                <td>
+                    Enter Name
+                </td>
+                <td>
+                    <input type="text" name="unm" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Password
+                </td>
+                <td>
+                    <input type="password" name="pwd" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Email
+                </td>
+                <td>
+                    <input type="email" name="mail_id" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Mobile Number
+                </td>
+                <td>
+                    <input type="number" name="mob_no" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Department
+                </td>
+                <td>
+                    <select name="dept">
+                        <option>Technical</option>
+                        <option>Accounts</option>
+                        <option>Sales</option>
+                        <option>Operations</option>
+                    </select>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    Date of Birth
+                </td>               
+                <td>
+                    <input type="date" name="dob" />
+                    
+                </td>
+            </tr>
+            <tr>                
+                <td>
+                    <input type="submit" name="regBtn" value="Register" />
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+</form>
+</div>    
+</section>
+{% include 'Footer.html' %}

@@ -1,0 +1,56 @@
+{% include 'Header.html' %}
+{% include 'nav.html' %}
+<section>
+    <div class="container">
+    <hr color="orange" size="10">
+    <h1 align="center">Third Page</h1>
+    <hr color="orange" size="10">
+
+    <table class="table table-bordered table-striped ">
+        <thead class="table-dark">
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Mobile Number</th>
+                <th>Email ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in userData %}
+            <tr>
+                <td>{{ data.eid  }}</td>
+                <td>{{ data.name  }}</td>
+                <td>{{ data.mobNo  }}</td>
+                <td>{{ data.email }}</td>                                
+            </tr>    
+            {% endfor %}
+        </tbody>
+    </table>   
+</div>
+</section>
+
+<section>
+<div class="container">
+    <div class="row">
+
+        {% for data in userData %}
+        <div class="col-md-3 col-sm-6" style="background-color: aqua;" >
+            <div class="card mt-3">
+                <div class="card-body">
+                  <h5 class="card-title">{{ data.name }}</h5>
+                  <p class="card-text">Email ID: {{ data.email }}
+                    Mob No : {{ data.mobNo  }}
+                  </p>
+                  <a href="#" class="btn btn-primary btn-block">View Details</a>
+                </div>
+              </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+</div>
+</section>
+
+
+{% include 'Footer.html' %}

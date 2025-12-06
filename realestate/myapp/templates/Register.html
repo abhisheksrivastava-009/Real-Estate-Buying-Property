@@ -1,0 +1,42 @@
+{% include 'Header.html' %}
+{%include 'NavBar.html' %}
+
+<section>
+    <div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <table class="table table-bordered table-dark">
+    <table>
+        <tr>
+            <td>
+                enter name
+                </td>
+            </td>
+            <td>
+                <input type="text" name="unm" />
+            </td>
+            <tr>
+            <td>
+                enter password
+            </td>
+            <td>
+                <input type="passsword" name="pwd" />
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                <input type="submit" name="subBtn1" value="Register">
+                <input type="submit" name="subBtn2" value="Login">
+
+                </td>
+            </tr>
+            </tbody>
+            </tr>
+        </tr>
+    </table>
+    </table>
+    </form>
+</section>
+
+{% include 'Footer.html' %}

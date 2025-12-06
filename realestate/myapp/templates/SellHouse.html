@@ -1,0 +1,181 @@
+{% load static %}
+{%include 'Header.html' %}
+{%include 'NavBar.html' %}
+
+
+<style type="text/css">
+    
+    .carousel-item  img{
+         width:100%;
+         height: 700px;
+        }
+ 
+    </style>
+  </head>
+  <body>
+
+
+
+       <!-- carousel --> 
+       <div class="">
+        <section style="margin-top: 10px;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-intervel="2000">
+                    <img src="{% static 'images/buy house7.jpg' %}" class="d-block w-640" alt="">
+                    <div class="carousel-caption ">
+                      <h5>Selling Your Drem House</h5>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="{% static 'images/slide7.avif' %}" class="d-block w-640" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class="text-white">Discover Your Dream House</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-intervel="3000">
+                    <img src="{% static 'images/Resident2.jpg' %}" class="d-block w-640" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class="text-danger">Make Your Dream Comes True</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="{% static 'images/Home2.jpg' %}" class="d-block w-640" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class="text-white">Discover Your Dream House</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="{% static 'images/build2.jpeg' %}" class="d-block w-640" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class="text-white">Discover Your Dream House</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+        
+              </div>
+
+
+
+
+              <div class="container">
+                <section style="margin-top: 10px;">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"> 
+
+                      <div class="card">
+                        <div class="card-header">
+                          Property ID: RH-2017-10
+                        </div>
+                        <div class="card-body">
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary" style=margin-top:5px;>3 Beds</a>
+                            <a href="#" class="btn btn-primary" style=margin-top:5px;>4 Bths</a>
+                            <a href="#" class="btn btn-primary" style=margin-top:5px;>4530 sqrt ft</a>
+                            <a href="#" class="btn btn-primary" style=margin-top:5px;>2 Garage</a>
+                            </div>
+                            
+          <h5 class="card-text text-primary">Description</h5>
+
+          <p class="card-text">The very best waterfront location in Harbor Islands complete with private dock and amazing water frontage! Offering panoramic water views, this spacious home has volume ceilings and offers a rarely available ground floor master bedroom suite. The modern kitchen has been completely updated, leading to entertainment and family rooms that open to fabulous back yard and swimming pool overlooking the waterways. Must be seen!</p>
+          <section style="margin-top: 30px;"></section>
+
+          
+          <h5 class="card-text text-primary">Features</h5>
+          <p class="card-text">2 stories</p>
+          <p class="card-text">Laundry Room</p>
+               <section style="margin-top: 30px;"></section>
+           
+          <h5 class="card-text text-primary">Property Videos</h5>
+          <p class="card-text"></p>
+          
+         <div>
+          <video src="{% static 'images/videos/selling flat.mp4' %}" class="d-block w-50" alt="" class="video-fluid" autoplay muted > 
+          </div>
+
+      <h5 class="card-text text-primary"></h5>
+     
+
+
+         <h3 class="box-container text-primary">Properties On Map</h3> 
+         <section style="margin-top: 30px;"></section>
+  
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14354.759218772957!2d83.5813376!3d25.9125659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715182838097!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+
+         <section style="margin-top: 30px;"></section>
+
+         <div class="card">
+                        
+          <div class="card-header">
+            Property ID: RH-2017-10
+          </div>
+          <div class="card-body">
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary" style=margin-top:5px;>3 Beds</a>
+              <a href="#" class="btn btn-primary" style=margin-top:5px;>4 Bths</a>
+              <a href="#" class="btn btn-primary" style=margin-top:5px;>4530 sqrt ft</a>
+              <a href="#" class="btn btn-primary" style=margin-top:5px;>2 Garage</a>
+              </div>
+              
+<h5 class="card-text text-primary">Description</h5>
+
+<p class="card-text">The very best waterfront location in Harbor Islands complete with private dock and amazing water frontage! Offering panoramic water views, this spacious home has volume ceilings and offers a rarely available ground floor master bedroom suite. The modern kitchen has been completely updated, leading to entertainment and family rooms that open to fabulous back yard and swimming pool overlooking the waterways. Must be seen!</p>
+<section style="margin-top: 30px;"></section>
+
+
+<h5 class="card-text text-primary">Features</h5>
+<p class="card-text">2 stories</p>
+<p class="card-text">Laundry Room</p>
+ <section style="margin-top: 30px;"></section>
+
+<h5 class="card-text text-primary">Property Videos</h5>
+<p class="card-text"></p>
+
+<div>
+<video src="{% static 'images/videos/agent video.mp4' %}" class="d-block w-50" alt="" class="video-fluid" autoplay muted > 
+</div>
+
+<h5 class="card-text text-primary"></h5>
+
+
+
+<h3 class="box-container text-primary">Properties On Map</h3> 
+<section style="margin-top: 30px;"></section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14354.759218772957!2d83.5813376!3d25.9125659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715182838097!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+
+<section style="margin-top: 30px;"></section>
+</div>
+</div> 
+</div>            
+
+     </div>
+      </div> 
+      </div>            
+          </div> 
+    </div>  
+   </br> 
+
+{%include 'Footer.html' %}

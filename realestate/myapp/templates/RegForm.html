@@ -1,0 +1,89 @@
+<section>
+    <form method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <table class="table table-bordered table-dark">
+        <tbody>
+            <tr>
+                <td>
+                    Enter Name
+                </td>
+                <td>
+                    <input type="text" name="unm" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Password
+                </td>
+                <td>
+                    <input type="password" name="pwd" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Enter Email
+                </td>
+                <td>
+                    <input type="email" name="mail_id" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile Number
+                </td>
+                <td>
+                    <input type="number" name="mob_no" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Department
+                </td>
+                <td>
+                    <select name="dept">
+                        <option>Technical</option>
+                        <option>Accounts</option>
+                        <option>Sales</option>
+                        <option>Operations</option>
+                    </select>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    Date of Birth
+                </td>  
+                <td>
+                    <input type="date" name="dob" />
+                </td>    
+                </tr>
+                <tr>
+                    <td>
+                        upload
+                    </td>
+                    <td>
+                        <input type="file" name="img_upd" />
+                    </td>
+                    
+                </tr>
+                <tr>         
+                <td>
+                    <input type="submit" name="RegBtn" value="Register" />
+                    <!-- <input type="submit" name="subBtn2" value="Login" /> -->
+                </td>
+            </tr>
+            <tr>                
+                <td>
+                    <!-- <input type="submit" name="subBtn1" value="Register" /> -->
+                    <input type="submit" name="subBtn2" value="Login" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+</form>
+</section>

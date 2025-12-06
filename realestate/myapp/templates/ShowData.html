@@ -1,0 +1,52 @@
+{% include 'Header.html'%}
+
+<section>
+<div class="container">
+<form method="post">
+{% csrf_token %}
+<input type="submit" name="showBtn" value="Show Data" />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Employee ID
+            </th>
+            <th>
+                Employee Name
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Mobile number
+            </th>
+            <th>
+                Department
+            </th>
+            <th>
+                Date of Birth
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+{% for user in users  %} 
+    <tr>
+        {% for k,v in user.items %}
+          <td> {{ v }} </td>
+        {% endfor %}    
+    </tr>
+{% endfor %}
+
+</tbody>
+</table>
+
+
+
+</form>
+</div>
+</section>
+
+{% include 'Footer.html'%}

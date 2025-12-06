@@ -1,0 +1,204 @@
+{% load static %}
+{%include 'Header.html' %}
+{%include 'NavBar.html' %}
+
+
+    <style type="text/css">
+    .carousel-item  img{
+         width:100%;
+         height: 650px;
+        }
+    
+          .contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #f2f6ff;
+    padding: 30px 0;
+  }
+
+  .contact-card {
+    background: white;
+    width: 75%;
+    max-width: 900px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .contact-card:hover {
+    transform: scale(1.01);
+  }
+
+  .contact-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2a2a72;
+  }
+
+  .form-control-custom {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+  }
+
+  .form-control-custom:focus {
+    border-color: #2a2a72;
+    box-shadow: 0 0 5px #2a2a72;
+    outline: none;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #2a2a72;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover {
+    background: #001f7f;
+  }
+ 
+    </style>
+  </head>
+  <body>
+  
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/Contact_us.jpg' %}" class="d-block w-100" alt="image">
+            <div class="carousel-caption ">
+              <h5 class="text-danger"></h5>
+              <p></p>
+            </div>
+          </div>
+          
+          
+
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button> -->
+
+      </div>
+
+      
+        <!-- contact section -->
+        
+        <div class="container">
+          <section id="contact" class="contact section-padding">
+            <h2 style="text-align: center; margin-top: 20px;"></h2>
+            <div class="">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="section-header text-center pb-5">
+                    <h2 class="text-primary">contact Us</h2>
+                    <h6>Do you have a question or comment you'd like to share? Fill out the contact form below, and a Tranzon representative will be in touch with you shortly.</h6>
+                  </div>
+                </div>
+  
+              </div>
+<section class="contact-form-section">
+<form method="post" action="{% url 'contact_info' %}">
+    {% csrf_token %}
+    <label>First Name</label>
+    <input type="text" name="unm" class="form-control-custom" required>
+
+    <label>Last Name</label>
+    <input type="text" name="lnm" class="form-control-custom" required>
+
+    <label>Email</label>
+    <input type="email" name="mail_id" class="form-control-custom" required>
+
+    <label>Mobile Number</label>
+    <input type="number" name="mob_no" class="form-control-custom" required>
+
+    <label>Your Query</label>
+    <input type="text" name="ask" class="form-control-custom" required>
+
+    <button type="submit" name="submitBtn" class="btn-submit">Send Now</button>
+</form>
+
+</section>
+
+          <!-- quires -->
+
+          <div class="container">
+          <section style="margin-top: 30px;">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h6 class="text-dark" >You can also reach us by calling 866.872.6966 or sending an email to advisor@tranzon.com.</h6>
+
+
+              <h5 class="text-primary" >Question About Selling?</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            
+            <h5 class="text-primary" >Question About Selling?</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+            
+            <h5 class="text-primary" >Question About Buying?</h5>
+            <p class="card-text">Do you have a question about a property currently listed for sale on tranzon.com? The Contact Agent for all of our properties is listed in the overview of each listing's detail page. This person is knowledgeable about the property and ready to answer any questions you may have. You are also encouraged to download the Property Information Package (PIP) for any property you are interested in, as it contains important information for bidders. Search for properties now.</p>
+
+            <h1 class="box-container">check out your location</h1>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30765978.00238801!2d61.00083698256399!3d19.729113061269327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1715168792873!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div> </div>
+
+  <!-- image overlap -->
+
+
+  <div class="container">
+    <div style="margin-bottom: 20px;">
+
+        <div class="card bg-dark text-white">
+    <img src="{% static 'images/Light background.jpg' %}" class="card-img" width="100%" height="760px">
+    
+
+    <div class="card-img-overlay">
+      <h5 class="card-title text-warning " >READ MORE STORY</h5>
+      <section style="margin-top: 70px;">
+
+      <p class="card-text text-dark">We understand that every client's needs and circumstances are different. This is why, when you contact us to sell your property, we start with a confidential consultation so we can fully understand your situation. We offer our clients solid strategies and a proven process, and we offer our buyers detailed property information and transparency. Both parties get a smooth transaction in a short amount of time.</p>        
+         <section style="margin-top: 70px;">
+
+
+        <p class="card-text text-dark">Our Market-Making System - a time-tested process for selling your property - is built on a foundation of communication, service, and experience. And while we are constantly innovating and adopting cutting-edge technologies to help you reach your goals, we will never allow algorithms to take the place of personal service.</p>
+        <section style="margin-top: 70px;">
+
+       <p class="card-text text-dark">When you work with Tranzon, you get relational service from experienced professionals. You get a custom strategy to help you meet your goals on a timeline that you control. You get A BETTER WAY TO REAL ESTATE.</p>
+
+    </div>
+  </div> 
+</div>
+</div>
+</div>
+
+      </div>
+    </div>
+    
+{%include 'Footer.html' %}

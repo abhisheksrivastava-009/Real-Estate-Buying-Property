@@ -1,0 +1,203 @@
+{% load static %}
+{% include 'Header.html' %}
+{% include 'NavBar.html' %}
+
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      /* background: url("{% static 'images/dream house logo1.png' %}") no-repeat center center fixed;
+      background-size: cover; */
+    }
+    .agent-section {
+      max-width: 75%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .agent-photo {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 350px;
+    }
+    .property-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .contact-links a {
+      margin-right: 15px;
+      color: #007bff;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .contact-links a:hover {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    .property-grid {
+      margin-top: 30px;
+    }
+
+    .contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+    .contact-form {
+  background: rgba(255,255,255,0.9); /* slightly transparent form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 500px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container agent-section" >
+  <div class="row">
+    <!-- Left: Agent Details -->
+    <div class="col-md-6">
+      <h2>Rahul Dixit</h2>
+      <p><strong>Experience:</strong> 5 years in Kanpur real estate</p>
+      <p><strong>Specialty:</strong> Residential Flats and Houses</p>
+      <p><strong>Total Properties Sold:</strong> 120</p>
+
+      <div class="contact-links">
+        <a href="/if"><i class="fas fa-phone"></i> Contact Agent</a>
+        <!-- <a href="mailto:rahul@example.com"><i class="fas fa-envelope"></i> Email</a> -->
+      </div>
+    </div>
+
+    <!-- Right: Agent Photo -->
+    <div class="col-md-6">
+      <img src="{% static 'images/Agent4.jpg' %}" alt="Rahul Dixit" class="agent-photo">
+    </div>
+  </div>
+
+  
+  <!-- Sold Properties Grid -->
+  <div class="property-grid">
+    <h4 class="mt-4">Sold Properties</h4>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/flat1.jpg' %}" class="property-img" alt="Sold Flat 1">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/house1.jpg' %}" class="property-img" alt="Sold House 1">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/flat2.jpg' %}" class="property-img" alt="Sold Flat 2">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/home1.jpg' %}" class="property-img" alt="Sold House 2">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/flat3.jpg' %}" class="property-img" alt="Sold Flat 3">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="{% static 'images/Home2.jpg' %}" class="property-img" alt="Sold House 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+        
+        <h2 style="text-align: center; margin-top: 20px;">Image Post Format</h2>
+        <div class="text-secondary">
+        <section style="margin-top: 50px;">
+            <div class="container">
+        <div class="card-columns">
+
+            <div class="card">
+              <img src="{% static 'images/Residedent1.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="{% static 'images/Resident2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>RealHomes gracefully facilitates real estate business owners
+                </p>
+                <footer class="blockquote-footer text-white">
+                  <small>
+                    RealHomes gracefully facilitates real estate business owners by making property management easier & affordable. <cite title="Source  Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="{% static 'images/Resident3.jpg' %}" class="card-img" alt="...">
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/Resident5.jpg' %}" class="card-img" alt="...">
+              </div>
+
+              <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                  <p> Facilitates real estate business owners</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted"><div class="text-warning">
+                        Our proffesional library showcasing recent successful sales of residential and commercial real estate. You can also view a selection of detailed case studies.</div> <cite title="Source Title"><a href="#" >About_Join_Us</a></cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="card">
+                <img src="{% static 'images/Resident4.jpg' %}" class="card-img" alt="...">
+              </div>
+                   
+    </div></section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).on('click', '[data-toggle="dropdown"]', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).dropdown('toggle');
+  });
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.dropdown').length) {
+      $('.dropdown-menu').removeClass('show');
+      $('.dropdown-toggle').attr('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>
+
+{%include 'Footer.html' %}

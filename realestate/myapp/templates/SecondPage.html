@@ -1,0 +1,24 @@
+{% include 'Header.html' %}
+{% include 'nav.html' %}
+
+<section>
+    <hr color="orange" size="10">
+<h1 align="center">Second Page</h1>
+<h3 align="center">Welcome :{{username  }} </h3>
+<h3 align="center">Email ID :{{email  }} </h3>
+<h3 align="center">Marks : {{ marks.0 }}</h3>
+<h3 align="center">Marks : {{ marks.1 }}</h3>
+
+
+
+<ul>
+    {% for ele in marks %}
+      <li> {{ele}} </li>
+    {% endfor %}
+</ul>
+
+<hr color="orange" size="10">
+
+
+{% include 'Footer.html' %}
+
